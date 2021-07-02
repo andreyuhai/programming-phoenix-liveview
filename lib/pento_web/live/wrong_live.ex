@@ -8,7 +8,7 @@ defmodule PentoWeb.WrongLive do
         socket,
         score: 0,
         message: "Guess a number.",
-        time: time()
+        num: :rand.uniform(10) |> to_string()
       )
     }
   end
