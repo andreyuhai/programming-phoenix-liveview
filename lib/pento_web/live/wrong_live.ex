@@ -49,11 +49,15 @@ defmodule PentoWeb.WrongLive do
     <h2>
       <%= @message %>
     </h2>
-    <h2>
-      <%= for n <- 1..10 do %>
-        <a href="#" phx-click="guess" phx-value-number="<%= n %>"><%= n %></a>
-      <% end %>
-    </h2>
+    <%= if @answered_correctly do %>
+      <%= live_redirect "Restart", to: Routes.live_path(@socket, PentoWeb.WrongLive) %>
+    <% else %>
+      <h2>
+        <%= for n <- 1..10 do %>
+          <a href="#" phx-click="guess" phx-value-number="<%= n %>"><%= n %></a>
+        <% end %>
+      </h2>
+    <% end %>
     """
   end
 end
