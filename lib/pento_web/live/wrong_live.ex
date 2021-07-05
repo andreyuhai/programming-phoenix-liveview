@@ -23,7 +23,8 @@ defmodule PentoWeb.WrongLive do
       assign(
         socket,
         message: correct_answer_msg,
-        score: score
+        score: score,
+        answered_correctly: true
       )
     }
   end
