@@ -7,9 +7,7 @@
 
 All the necessary code is in [wrong_live.ex](/lib/pento_web/live/wrong_live.ex)
 
----
-
-# Give it a try
+### Give it a try
 
 > Now that you’ve seen a basic LiveView “game”, you can tweak the game so that the user can actually win. You’ll need to:
 > 
