@@ -1,3 +1,9 @@
+You can find code implementations from the book & answers to "Give it a try"s in the book in different branches of this repo.
+
+[Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter_1_give_it_a_try)
+
+---
+
 # Pento
 
 To start your Phoenix server:
