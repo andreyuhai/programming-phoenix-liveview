@@ -1,6 +1,11 @@
-In this branch you can find a solution to the "Give it a try" at the end of Chapter 1.
+# Chapter 1
 
-All the code is in [wrong_live.ex](/lib/pento_web/live/wrong_live.ex)
+### What's in this branch?
+
+- Necessary code for Chapter 1
+- Solution to "give it a try"
+
+All the necessary code is in [wrong_live.ex](/lib/pento_web/live/wrong_live.ex)
 
 ---
 
