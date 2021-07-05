@@ -1,6 +1,9 @@
-You can find code implementations from the book & answers to "Give it a try"s in the book in different branches of this repo.
+# Chapters
 
-[Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter_1_give_it_a_try)
+You can find code implementations & solutions for each chapter.
+
+- [Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
+- [Chapter 2](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter2)
 
 ---
 
