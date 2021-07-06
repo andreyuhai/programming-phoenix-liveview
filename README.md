@@ -12,11 +12,11 @@
 > - If you already have an email service, try plugging it in to the generated authentication service so that it will really send the user an email when they register for an account. Did you have to add additional arguments to the existing functions?
 > - Add a migration and a field to give the User schema a username field, and display that username instead of the email address when a user logs in. Did you require the username to be unique?
 
-Related commits: 
-1. [Create a migration to add username column to users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
-2. [Create a migration to add unique index to username column for users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
-3. [Add username field to the User schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ff6b5a5c98b7513b4ca0d77da62631213e02ba01)
-4. [Show username after logging in instead of user email](https://github.com/andreyuhai/programming-phoenix-liveview/commit/602e4f658130bae41aa61b97f7d606f5e5503d57)
+    Related commits: 
+    1. [Create a migration to add username column to users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
+    2. [Create a migration to add unique index to username column for users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
+    3. [Add username field to the User schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ff6b5a5c98b7513b4ca0d77da62631213e02ba01)
+    4. [Show username after logging in instead of user email](https://github.com/andreyuhai/programming-phoenix-liveview/commit/602e4f658130bae41aa61b97f7d606f5e5503d57)
 > - If a logged in user visits the / route, make them redirect to the /guess route.
 
 Related commit: 
