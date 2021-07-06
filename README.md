@@ -1,6 +1,6 @@
 # Chapters
 
-You can find code implementations & solutions for each chapter.
+You can find code implementations & solutions to "give it a try"s for each chapter with related commits linked or code.
 
 - [Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
 - [Chapter 2](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter2)
