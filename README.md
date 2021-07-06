@@ -11,9 +11,7 @@
 > 
 > - If you already have an email service, try plugging it in to the generated authentication service so that it will really send the user an email when they register for an account. Did you have to add additional arguments to the existing functions?
 > - Add a migration and a field to give the User schema a username field, and display that username instead of the email address when a user logs in. Did you require the username to be unique?
-> - If a logged in user visits the / route, make them redirect to the /guess route.
-
-Commit for the solution: https://github.com/andreyuhai/programming-phoenix-liveview/commit/68a142f4bd93a11182157d8ba8298ef79747f01e
+> - [If a logged in user visits the / route, make them redirect to the /guess route.](https://github.com/andreyuhai/programming-phoenix-liveview/commit/68a142f4bd93a11182157d8ba8298ef79747f01e) 
 
 # Pento
 
