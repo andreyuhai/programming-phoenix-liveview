@@ -16,7 +16,7 @@
 
 Related commits: 
 1. [Create a migration to add username column to users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
-2. [Create a migration to add unique index to username column for users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
+2. [Create a migration to add unique index to username column for users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/c6a34fa00ace1188552678102a2b2d213d5bbe31)
 3. [Add username field to the User schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ff6b5a5c98b7513b4ca0d77da62631213e02ba01)
 4. [Show username after logging in instead of user email](https://github.com/andreyuhai/programming-phoenix-liveview/commit/602e4f658130bae41aa61b97f7d606f5e5503d57)
 
