@@ -2,8 +2,8 @@
 
 ### What's in this branch?
 
-- Necessary code for Chapter 1
-- Solution to "give it a try"
+- Necessary code for Chapter 1.
+- Solutions to "give it a try" exercises at the end of the chapter.
 
 ### Give it a try
 
