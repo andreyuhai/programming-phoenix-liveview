@@ -2,20 +2,16 @@
 
 ### What's in this branch?
 
-- Necessary code for Chapter 1
+- Necessary code for Chapter 2
 - Solution to "give it a try"
-
-All the necessary code is in [wrong_live.ex](/lib/pento_web/live/wrong_live.ex)
 
 ### Give it a try
 
-> Now that you’ve seen a basic LiveView “game”, you can tweak the game so that the user can actually win. You’ll need to:
+> These problems deal with small tweaks to the existing generated code.
 > 
-> - Assign a random number to the socket when the game is created, one the user will need to guess.
-> - Check for that number in the `handle_event` for guess.
-> - Award points for a right guess.
-> - Show a winning message when the user wins.
-> - Show a restart message and button when the user wins. Hint: you might want to check out the `live_patch/2` function to help you build that button. You can treat this last challenge as a stretch goal. We’ll get into `live_patch/2` in greater detail in upcoming chapters.
+> - If you already have an email service, try plugging it in to the generated authentication service so that it will really send the user an email when they register for an account. Did you have to add additional arguments to the existing functions?
+> - Add a migration and a field to give the User schema a username field, and display that username instead of the email address when a user logs in. Did you require the username to be unique?
+> - If a logged in user visits the / route, make them redirect to the /guess route.
 
 # Pento
 
