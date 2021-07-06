@@ -23,7 +23,7 @@ Related commits:
 
 > - If a logged in user visits the / route, make them redirect to the /guess route.
 
-Related commit: 
+Related commits: 
 1. [If a logged in user visits the / route, make them redirect to the /guess route.](https://github.com/andreyuhai/programming-phoenix-liveview/commit/68a142f4bd93a11182157d8ba8298ef79747f01e) 
 
 # Pento
