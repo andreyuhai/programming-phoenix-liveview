@@ -17,7 +17,10 @@ Related commits:
 2. [Create a migration to add unique index to username column for users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
 3. [Add username field to the User schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ff6b5a5c98b7513b4ca0d77da62631213e02ba01)
 4. [Show username after logging in instead of user email](https://github.com/andreyuhai/programming-phoenix-liveview/commit/602e4f658130bae41aa61b97f7d606f5e5503d57)
-> - [If a logged in user visits the / route, make them redirect to the /guess route.](https://github.com/andreyuhai/programming-phoenix-liveview/commit/68a142f4bd93a11182157d8ba8298ef79747f01e) 
+> - If a logged in user visits the / route, make them redirect to the /guess route.
+
+Related commit: 
+1. [If a logged in user visits the / route, make them redirect to the /guess route.](https://github.com/andreyuhai/programming-phoenix-liveview/commit/68a142f4bd93a11182157d8ba8298ef79747f01e) 
 
 # Pento
 
