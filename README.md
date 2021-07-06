@@ -8,7 +8,7 @@
 ### Give it a try
 
 > These problems deal with small tweaks to the existing generated code.
-
+>
 > - If you already have an email service, try plugging it in to the generated authentication service so that it will really send the user an email when they register for an account. Did you have to add additional arguments to the existing functions?
 
 Not implemented yet, can use SendGrid.
