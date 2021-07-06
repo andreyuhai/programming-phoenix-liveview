@@ -11,6 +11,7 @@
 
 > - If you already have an email service, try plugging it in to the generated authentication service so that it will really send the user an email when they register for an account. Did you have to add additional arguments to the existing functions?
 
+Not implemented yet, can use SendGrid.
 
 > - Add a migration and a field to give the User schema a username field, and display that username instead of the email address when a user logs in. Did you require the username to be unique?
 
