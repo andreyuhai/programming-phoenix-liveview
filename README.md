@@ -1,8 +1,8 @@
-# Chapter 2
+# Chapter 3
 
 ### What's in this branch?
 
-- Necessary code for Chapter 2.
+- Necessary code for Chapter 3.
 - Solutions to "give it a try" exercises at the end of the chapter.
 
 ### Give it a try
