@@ -19,8 +19,8 @@ Solutions to all the exercises above are in [wrong_live.ex](/lib/pento_web/live/
 
 # Other Chapters
 
-- [Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
-- [Chapter 2 [Currently here]](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter2)
+- [Chapter 1 [Currently here]](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
+- [Chapter 2](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter2)
 - [Chapter 3](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter3)
 
 # Pento
