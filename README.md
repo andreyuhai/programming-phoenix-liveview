@@ -7,25 +7,17 @@
 
 ### Give it a try
 
-> These problems deal with small tweaks to the existing generated code.
+> You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
 >
-> - If you already have an email service, try plugging it in to the generated authentication service so that it will really send the user an email when they register for an account. Did you have to add additional arguments to the existing functions?
+> - Create another changeset in the Product schema that only changes the unit_price field and only allows for a price decrease from the current price.
 
-Not implemented yet, can use SendGrid.
+Related commits:
+1. [Create another  changeset in the Product schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/c9fa88dfbbced9e5ff02a54f451d50696c6ba5f6)
 
-> - Add a migration and a field to give the User schema a username field, and display that username instead of the email address when a user logs in. Did you require the username to be unique?
-
-Related commits: 
-1. [Create a migration to add username column to users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/62fc1e0e152bfb36d96c5758283deb034629ca28)
-2. [Create a migration to add unique index to username column for users table](https://github.com/andreyuhai/programming-phoenix-liveview/commit/c6a34fa00ace1188552678102a2b2d213d5bbe31)
-3. [Add username field to the User schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ff6b5a5c98b7513b4ca0d77da62631213e02ba01)
-4. [Show username after logging in instead of user email](https://github.com/andreyuhai/programming-phoenix-liveview/commit/602e4f658130bae41aa61b97f7d606f5e5503d57)
-
-
-> - If a logged in user visits the / route, make them redirect to the /guess route.
+> - Then, create a context function called markdown_product/2 that takes in an argument of the product and the amount by which the price should decrease. This function should use the new changeset you created to update the product with the newly decreased price.
 
 Related commits: 
-1. [If a logged in user visits the / route, make them redirect to the /guess route.](https://github.com/andreyuhai/programming-phoenix-liveview/commit/68a142f4bd93a11182157d8ba8298ef79747f01e) 
+1. [Create a context function called markdown_product/2](https://github.com/andreyuhai/programming-phoenix-liveview/commit/fb3714675f023a98bcd2f3ff55a3f2631cc3c6aa)
 
 # Pento
 
