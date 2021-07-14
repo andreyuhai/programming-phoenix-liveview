@@ -24,7 +24,7 @@
   <tbody id="products">
     <%= for product <- @products do %>
       <tr id="product-<%= product.id %>">
-        <td><%= product.name %></td>
+        <td><%= live_redirect product.name, to: Routes.product_show_path(@socket, :show, product) %></td>
         <td><%= product.description %></td>
         <td><%= product.unit_price %></td>
         <td><%= product.sku %></td>
