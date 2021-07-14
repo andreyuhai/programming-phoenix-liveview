@@ -13,7 +13,8 @@ defmodule PentoWeb.ProductLive.Show do
     {:noreply,
      socket
      |> assign(:page_title, page_title(socket.assigns.live_action))
-     |> assign(:product, Catalog.get_product!(id))}
+     |> assign(:product, Catalog.get_product!(id))
+     |> assign(:custom_message, "Currently displaying product: ")}
   end
 
   defp page_title(:show), do: "Show Product"
