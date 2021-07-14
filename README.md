@@ -16,7 +16,7 @@
 
 > - What data does Show.mount/3 add to the socket?
 
-Nothing special, only passes the same socket data intact.
+Nothing special, only passes the same socket data intact as you can see [here](https://github.com/andreyuhai/programming-phoenix-liveview/blob/chapter4/lib/pento_web/live/product_live/show.ex#L6-L9).
 
 > - How does the `ProductLive.Show` live view use the `handle_params/3` callback?
 
