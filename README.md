@@ -8,7 +8,7 @@
 ### Give it a try
 
 > These three problems are different in nature. You’ll accomplish three tasks. The first, most straightforward one, is to trace through the ProductLive.Show live view.
->  # Trace Through a Live View
+>  #### Trace Through a Live View
 
 > You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
 >
