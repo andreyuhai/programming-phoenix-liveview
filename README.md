@@ -26,6 +26,11 @@ To add the `page_title` and specific `product` information given by the `id` int
 
 Using `live_patch/2`, supported events by the edit form are `validate` on change and `save` on submit.
 
+> When you’re done, display your own message on the page by adding some content to the Show live view’s socket.assigns and then rendering it in the template.
+
+Related commits: 
+1. [Add custom_message key to assigns](https://github.com/andreyuhai/programming-phoenix-liveview/commit/753b44321c0de10e9ee74722d2e55047dca47499)
+2. [Show custom_message on template](https://github.com/andreyuhai/programming-phoenix-liveview/commit/1d8e1e94ae7d16d0b55c076ee6a07548f37ddeec)
 
 
 > You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
