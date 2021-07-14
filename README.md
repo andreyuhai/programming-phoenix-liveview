@@ -32,6 +32,11 @@ Related commits:
 1. [Add custom_message key to assigns](https://github.com/andreyuhai/programming-phoenix-liveview/commit/753b44321c0de10e9ee74722d2e55047dca47499)
 2. [Show custom_message on template](https://github.com/andreyuhai/programming-phoenix-liveview/commit/1d8e1e94ae7d16d0b55c076ee6a07548f37ddeec)
 
+> #### Change the Index Live View
+> Let’s tackle a more challenging problem now. You’ll make a slight tweak to the `index.html.leex` live view.
+>
+> - Instead of showing `<td><%= product.name %></td>` as a column containing the plain product name, make that name a link that brings the user to the product show page. Think about whether you need to reach for the `live_redirect/2` or `live_patch/2` function here.
+
 
 > You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
 >
