@@ -2,7 +2,7 @@
 
 ### What's in this branch?
 
-- Necessary code for Chapter 3.
+- Necessary code for Chapter 4.
 - Solutions to "give it a try" exercises at the end of the chapter.
 
 ### Give it a try
