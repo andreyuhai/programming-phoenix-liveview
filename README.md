@@ -3,7 +3,7 @@
 ### What's in this branch?
 
 - Necessary code for Chapter 4.
-- Solutions to "give it a try" exercises at the end of the chapter.
+- [Solutions to "give it a try" exercises at the end of the chapter.](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter4#give-it-a-try)
 
 ### Give it a try
 
