@@ -37,6 +37,10 @@ Related commits:
 >
 > - Instead of showing `<td><%= product.name %></td>` as a column containing the plain product name, make that name a link that brings the user to the product show page. Think about whether you need to reach for the `live_redirect/2` or `live_patch/2` function here.
 
+Since we want to redirect to another live view (namely PentoWeb.ProductLive.Show) we need a `live_redirect/2` as [the docs](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.Helpers.html#live_patch/2) say.
+
+Related commits:
+1. 
 
 > You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
 >
