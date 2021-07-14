@@ -40,19 +40,12 @@ Related commits:
 Since we want to redirect to another live view (namely PentoWeb.ProductLive.Show) we need a `live_redirect/2` as [the docs](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.Helpers.html#live_patch/2) say.
 
 Related commits:
-1. 
+1. [Add live_redirect to product name to redirect to product show](https://github.com/andreyuhai/programming-phoenix-liveview/commit/8aecb360b972da09fad5aaecbd7f6f607ebec88f) 
 
-> You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
->
-> - Create another changeset in the Product schema that only changes the unit_price field and only allows for a price decrease from the current price.
+> - Next, remove the show link from the list of actions accompanying a given product table row.
 
 Related commits:
-1. [Create another  changeset in the Product schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/c9fa88dfbbced9e5ff02a54f451d50696c6ba5f6)
-
-> - Then, create a context function called markdown_product/2 that takes in an argument of the product and the amount by which the price should decrease. This function should use the new changeset you created to update the product with the newly decreased price.
-
-Related commits: 
-1. [Create a context function called markdown_product/2](https://github.com/andreyuhai/programming-phoenix-liveview/commit/fb3714675f023a98bcd2f3ff55a3f2631cc3c6aa)
+1. [Remove show link](https://github.com/andreyuhai/programming-phoenix-liveview/commit/9201c477c36cfaf2d44929f6450ba625cf43175d)
 
 # Other Chapters
 
