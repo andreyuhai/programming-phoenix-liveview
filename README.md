@@ -5,6 +5,7 @@ You can find code implementations & solutions to "give it a try"s for each chapt
 - [Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
 - [Chapter 2](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter2)
 - [Chapter 3](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter3)
+- [Chapter 4](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter4)
 
 ---
 
