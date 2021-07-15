@@ -54,7 +54,7 @@ Related commits:
 > ### Generate Your Own LiveView
 > This final, more complex, task will ask you to combine everything you’ve learned in this and the previous chapter. You’ll run the Phoenix Live generator again to create a new set of CRUD features for a resource, FAQ, or “frequently asked question”. This feature will allow users of our gaming site to submit questions, answer them, and up-vote them. Each FAQ should have fields for a question, an answer, and a vote count. Devise your generator command and run it. Then, fire up the Phoenix server and interact with your generated FAQ CRUD features! Can you create a new question? Can you answer it? Trace some of the generated code pathways that support this functionality.
 
---
+---
 
 # Other Chapters
 
