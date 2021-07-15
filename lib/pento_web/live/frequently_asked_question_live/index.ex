@@ -18,9 +18,19 @@ defmodule PentoWeb.FrequentlyAskedQuestionLive.Index do
   end
 
   defp apply_action(socket, :edit, %{"id" => id}) do
-    socket
-    |> assign(:page_title, "Edit Frequently asked question")
-    |> assign(:frequently_asked_question, FAQ.get_frequently_asked_question!(id))
+    current_user = socket.assigns.current_user
+    faq = FAQ.get_frequently_asked_question!(id)
+
+    case faq.user_id == current_user.id do
+      true ->
+        socket
+        |> assign(:page_title, "Edit Frequently asked question")
+        |> assign(:frequently_asked_question, faq)
+      false ->
+        socket
+        |> put_flash(:info, "You can not edit this FAQ!")
+        |> push_redirect(to: Routes.frequently_asked_question_index_path(socket, :index))
+    end
   end
 
   defp apply_action(socket, :new, _params) do
