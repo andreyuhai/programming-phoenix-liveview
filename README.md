@@ -54,6 +54,28 @@ Related commits:
 > ### Generate Your Own LiveView
 > This final, more complex, task will ask you to combine everything you’ve learned in this and the previous chapter. You’ll run the Phoenix Live generator again to create a new set of CRUD features for a resource, FAQ, or “frequently asked question”. This feature will allow users of our gaming site to submit questions, answer them, and up-vote them. Each FAQ should have fields for a question, an answer, and a vote count. Devise your generator command and run it. Then, fire up the Phoenix server and interact with your generated FAQ CRUD features! Can you create a new question? Can you answer it? Trace some of the generated code pathways that support this functionality.
 
+Related commits:
+1. [Run mix phx.gen.live FAQ FrequentlyAskedQuestion frequently_asked_questions question answer vote_count:integer user_id:references:users](https://github.com/andreyuhai/programming-phoenix-liveview/commit/0638aa998a89f6ce116d27f2744b94210eb5b5f5)
+2. [Add has_many :faqs, FrequentlyAskedQuestions relationship](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ca11d21cbd66e5621ddb2d90b167adb90c8a9db7)
+3. [Add endpoints for FAQ](https://github.com/andreyuhai/programming-phoenix-liveview/commit/ad355b60451f66d820fcb322455c7f6e7f24a127)
+4. [Change vote_count default to 0, add belongs_to :user association](https://github.com/andreyuhai/programming-phoenix-liveview/commit/e1a8f0be339abd16eacb8b62dba3fdd8091ccc23)
+5. [Remove vote_count from cast and validate_required](https://github.com/andreyuhai/programming-phoenix-liveview/commit/b90bb97777f897230ae289906a0a12a23b4e0d94)
+6. [Add user_id as hidden_input to the form component](https://github.com/andreyuhai/programming-phoenix-liveview/commit/73d8b3d3b14063aad912d5073a612824cb3e43c5)
+7. [Assign current_user to the socket inside mount](https://github.com/andreyuhai/programming-phoenix-liveview/commit/7f5a1d0630648223e84f3a4829ffa65cabd06cf9)
+8. [Pass current_user to the live_modal as well so we can use it in form component](https://github.com/andreyuhai/programming-phoenix-liveview/commit/788ee4559d84513bec5b7cc2ed74ae0f22fe325b)
+9. [Change query to order all FAQs by inserted_at](https://github.com/andreyuhai/programming-phoenix-liveview/commit/4959fd3d3c6af82897f10e17b73bd3d8842d3b59)
+10. [Implement upvote_frequently_asked_question/1](https://github.com/andreyuhai/programming-phoenix-liveview/commit/7be5359cff749a281ffc252d553081b5fc3fe656)
+11. [Implement upvote_changeset/2](https://github.com/andreyuhai/programming-phoenix-liveview/commit/f11429e5c190091609f46ba5ecf4164f0b4390d8)
+12. [Implement handle_event/3 for upvote event](https://github.com/andreyuhai/programming-phoenix-liveview/commit/6af8149dc5ee9303b7e2ef450a28abc20c42ee19)
+13. [Add upvote button to be able to upvote an FAQ](https://github.com/andreyuhai/programming-phoenix-liveview/commit/2ada86f803631e27ee9c0f0150dc378c9bf44bd8)
+14. [Show edit button depending on whether the user is the owner of that FAQ](https://github.com/andreyuhai/programming-phoenix-liveview/commit/92e6561f10030054444a6b7d4fdeffda52573d05)
+15. [If a user tries to edit a post that they do not own, put a flash and redirect back to index](https://github.com/andreyuhai/programming-phoenix-liveview/commit/f1b85fe04c637b0577f05e25051d390633a837ec)
+16. [Remove the if block showing the edit button depending on the ownership of the FAQ, since we now we return an error if the user doesn't own the post and tries to edit it](https://github.com/andreyuhai/programming-phoenix-liveview/commit/40930df5ccb8498758998d24e740853b33b0f700)
+
+
+Demo
+https://user-images.githubusercontent.com/11967154/125795070-912eeef2-027c-46c8-ab0f-fdcbf1dae981.mov
+
 ---
 
 # Other Chapters
