@@ -29,8 +29,10 @@
             <%= link "Upvote", to: "#", phx_click: "upvote", phx_value_id: frequently_asked_question.id %></td>
 
         <td>
-          <span><%= live_patch "Edit", to: Routes.frequently_asked_question_index_path(@socket, :edit, frequently_asked_question) %></span>
-          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: frequently_asked_question.id, data: [confirm: "Are you sure?"] %></span>
+          <%= if @current_user.id == frequently_asked_question.user_id do %>
+            <span><%= live_patch "Edit", to: Routes.frequently_asked_question_index_path(@socket, :edit, frequently_asked_question) %></span> |
+          <% end %>
+        <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: frequently_asked_question.id, data: [confirm: "Are you sure?"] %></span>
         </td>
       </tr>
     <% end %>
