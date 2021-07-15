@@ -18,7 +18,9 @@ defmodule Pento.FAQ do
 
   """
   def list_frequently_asked_questions do
-    Repo.all(FrequentlyAskedQuestion)
+    query = from faq in FrequentlyAskedQuestion,
+            order_by: faq.inserted_at
+    Repo.all(query)
   end
 
   @doc """
