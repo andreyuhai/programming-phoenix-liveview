@@ -25,7 +25,8 @@
       <tr id="frequently_asked_question-<%= frequently_asked_question.id %>">
         <td><%= live_redirect frequently_asked_question.question, to: Routes.frequently_asked_question_show_path(@socket, :show, frequently_asked_question) %></td>
         <td><%= frequently_asked_question.answer %></td>
-        <td><%= frequently_asked_question.vote_count %></td>
+        <td><%= frequently_asked_question.vote_count %> |
+            <%= link "Upvote", to: "#", phx_click: "upvote", phx_value_id: frequently_asked_question.id %></td>
 
         <td>
           <span><%= live_patch "Edit", to: Routes.frequently_asked_question_index_path(@socket, :edit, frequently_asked_question) %></span>
