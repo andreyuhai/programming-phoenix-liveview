@@ -10,7 +10,7 @@
 ### Give it a try
 
 > These three problems are different in nature. You’ll accomplish three tasks. The first, most straightforward one, is to trace through the ProductLive.Show live view.
-> #### Trace Through a Live View
+> ### Trace Through a Live View
 > Start from the `Index` page’s implementation of the link to the product show page and work your way through the route, `mount/3`, `handle_params/3`, and `render/1` lifecycle. Answer these questions:>
 > - Which route gets invoked when you click the link on the Index page to view a given product?
 
@@ -34,7 +34,7 @@ Related commits:
 1. [Add custom_message key to assigns](https://github.com/andreyuhai/programming-phoenix-liveview/commit/753b44321c0de10e9ee74722d2e55047dca47499)
 2. [Show custom_message on template](https://github.com/andreyuhai/programming-phoenix-liveview/commit/1d8e1e94ae7d16d0b55c076ee6a07548f37ddeec)
 
-> #### Change the Index Live View
+> ### Change the Index Live View
 > Let’s tackle a more challenging problem now. You’ll make a slight tweak to the `index.html.leex` live view.
 >
 > - Instead of showing `<td><%= product.name %></td>` as a column containing the plain product name, make that name a link that brings the user to the product show page. Think about whether you need to reach for the `live_redirect/2` or `live_patch/2` function here.
