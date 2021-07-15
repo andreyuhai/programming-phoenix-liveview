@@ -57,6 +57,12 @@ defmodule Pento.FAQ do
     |> Repo.insert()
   end
 
+  def upvote_frequently_asked_question(%FrequentlyAskedQuestion{} = frequently_asked_question) do
+    frequently_asked_question
+    |> FrequentlyAskedQuestion.upvote_changeset(%{vote_count: frequently_asked_question.vote_count + 1})
+    |> Repo.update()
+  end
+
   @doc """
   Updates a frequently_asked_question.
 
