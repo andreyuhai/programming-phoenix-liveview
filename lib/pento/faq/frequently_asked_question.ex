@@ -5,8 +5,8 @@ defmodule Pento.FAQ.FrequentlyAskedQuestion do
   schema "frequently_asked_questions" do
     field :answer, :string
     field :question, :string
-    field :vote_count, :integer
-    field :user_id, :id
+    field :vote_count, :integer, default: 0
+    belongs_to :user, Pento.Accounts.User
 
     timestamps()
   end
