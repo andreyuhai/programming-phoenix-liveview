@@ -3,6 +3,7 @@
 <%= if @live_action in [:new, :edit] do %>
   <%= live_modal @socket, PentoWeb.FrequentlyAskedQuestionLive.FormComponent,
     id: @frequently_asked_question.id || :new,
+    current_user: @current_user,
     title: @page_title,
     action: @live_action,
     frequently_asked_question: @frequently_asked_question,
@@ -22,12 +23,11 @@
   <tbody id="frequently_asked_questions">
     <%= for frequently_asked_question <- @frequently_asked_questions do %>
       <tr id="frequently_asked_question-<%= frequently_asked_question.id %>">
-        <td><%= frequently_asked_question.question %></td>
+        <td><%= live_redirect frequently_asked_question.question, to: Routes.frequently_asked_question_show_path(@socket, :show, frequently_asked_question) %></td>
         <td><%= frequently_asked_question.answer %></td>
         <td><%= frequently_asked_question.vote_count %></td>
 
         <td>
-          <span><%= live_redirect "Show", to: Routes.frequently_asked_question_show_path(@socket, :show, frequently_asked_question) %></span>
           <span><%= live_patch "Edit", to: Routes.frequently_asked_question_index_path(@socket, :edit, frequently_asked_question) %></span>
           <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: frequently_asked_question.id, data: [confirm: "Are you sure?"] %></span>
         </td>
