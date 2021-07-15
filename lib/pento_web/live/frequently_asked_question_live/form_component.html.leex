@@ -14,9 +14,7 @@
   <%= text_input f, :answer %>
   <%= error_tag f, :answer %>
 
-  <%= label f, :vote_count %>
-  <%= number_input f, :vote_count %>
-  <%= error_tag f, :vote_count %>
+  <%= hidden_input f, :user_id, value: @current_user.id %>
 
   <%= submit "Save", phx_disable_with: "Saving..." %>
 </form>
