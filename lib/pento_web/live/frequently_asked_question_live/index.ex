@@ -5,8 +5,11 @@ defmodule PentoWeb.FrequentlyAskedQuestionLive.Index do
   alias Pento.FAQ.FrequentlyAskedQuestion
 
   @impl true
-  def mount(_params, _session, socket) do
-    {:ok, assign(socket, :frequently_asked_questions, list_frequently_asked_questions())}
+  def mount(_params, session, socket) do
+    {:ok,
+      socket
+      |> assign(:frequently_asked_questions, list_frequently_asked_questions())
+      |> assign(:current_user, Pento.Accounts.get_user_by_session_token(session["user_token"]))}
   end
 
   @impl true
