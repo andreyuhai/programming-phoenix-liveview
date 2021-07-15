@@ -14,7 +14,7 @@ defmodule Pento.FAQ.FrequentlyAskedQuestion do
   @doc false
   def changeset(frequently_asked_question, attrs) do
     frequently_asked_question
-    |> cast(attrs, [:question, :answer, :vote_count])
-    |> validate_required([:question, :answer, :vote_count])
+    |> cast(attrs, [:question, :answer, :user_id])
+    |> validate_required([:question, :answer, :user_id])
   end
 end
