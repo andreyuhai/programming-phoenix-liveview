@@ -43,6 +43,13 @@ defmodule PentoWeb.FrequentlyAskedQuestionLive.Index do
     {:noreply, assign(socket, :frequently_asked_questions, list_frequently_asked_questions())}
   end
 
+  def handle_event("upvote", %{"id" => id}, socket) do
+    frequently_asked_question = FAQ.get_frequently_asked_question!(id)
+    {:ok, f} = FAQ.upvote_frequently_asked_question(frequently_asked_question)
+
+    {:noreply, assign(socket, :frequently_asked_questions, list_frequently_asked_questions())}
+  end
+
   defp list_frequently_asked_questions do
     FAQ.list_frequently_asked_questions()
   end
