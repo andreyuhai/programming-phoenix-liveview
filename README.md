@@ -74,7 +74,11 @@ Related commits:
 
 
 Demo
-https://user-images.githubusercontent.com/11967154/125795070-912eeef2-027c-46c8-ab0f-fdcbf1dae981.mov
+
+![Screen-Recording-2021-07-15-at-15 25 56](https://user-images.githubusercontent.com/11967154/125796013-19b3a2bd-1d0b-42b0-8a94-a3166d5eb6c4.gif)
+
+
+
 
 ---
 
