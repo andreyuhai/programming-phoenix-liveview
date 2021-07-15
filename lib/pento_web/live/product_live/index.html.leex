@@ -1,3 +1,4 @@
+<h1><%= @greeting %></h1>
 <h1>Listing Products</h1>
 
 <%= if @live_action in [:new, :edit] do %>
@@ -23,13 +24,12 @@
   <tbody id="products">
     <%= for product <- @products do %>
       <tr id="product-<%= product.id %>">
-        <td><%= product.name %></td>
+        <td><%= live_redirect product.name, to: Routes.product_show_path(@socket, :show, product) %></td>
         <td><%= product.description %></td>
         <td><%= product.unit_price %></td>
         <td><%= product.sku %></td>
 
         <td>
-          <span><%= live_redirect "Show", to: Routes.product_show_path(@socket, :show, product) %></span>
           <span><%= live_patch "Edit", to: Routes.product_index_path(@socket, :edit, product) %></span>
           <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: product.id, data: [confirm: "Are you sure?"] %></span>
         </td>
