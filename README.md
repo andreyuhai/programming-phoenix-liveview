@@ -1,12 +1,30 @@
-# Chapters
+# Chapter 3
 
-You can find code implementations & solutions to "give it a try"s for each chapter as a branch with related commits/code linked.
+### What's in this branch?
+
+- Necessary code for Chapter 3.
+- Solutions to "give it a try" exercises at the end of the chapter.
+
+### Give it a try
+
+> You’ll have more of an opportunity to get your hands dirty with the exercises at the end of the next chapter. Until then, these tasks will give you some practice with writing core and boundary code.
+>
+> - Create another changeset in the Product schema that only changes the unit_price field and only allows for a price decrease from the current price.
+
+Related commits:
+1. [Create another  changeset in the Product schema](https://github.com/andreyuhai/programming-phoenix-liveview/commit/c9fa88dfbbced9e5ff02a54f451d50696c6ba5f6)
+
+> - Then, create a context function called markdown_product/2 that takes in an argument of the product and the amount by which the price should decrease. This function should use the new changeset you created to update the product with the newly decreased price.
+
+Related commits: 
+1. [Create a context function called markdown_product/2](https://github.com/andreyuhai/programming-phoenix-liveview/commit/fb3714675f023a98bcd2f3ff55a3f2631cc3c6aa)
+
+# Other Chapters
 
 - [Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
 - [Chapter 2](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter2)
-- [Chapter 3](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter3)
-
----
+- [Chapter 3 [Currently here]](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter3)
+- [Chapter 4](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter4)
 
 # Pento
 
@@ -27,4 +45,3 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Guides: https://hexdocs.pm/phoenix/overview.html
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
