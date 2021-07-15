@@ -1,0 +1,22 @@
+<h2><%= @title %></h2>
+
+<%= f = form_for @changeset, "#",
+  id: "frequently_asked_question-form",
+  phx_target: @myself,
+  phx_change: "validate",
+  phx_submit: "save" %>
+
+  <%= label f, :question %>
+  <%= text_input f, :question %>
+  <%= error_tag f, :question %>
+
+  <%= label f, :answer %>
+  <%= text_input f, :answer %>
+  <%= error_tag f, :answer %>
+
+  <%= label f, :vote_count %>
+  <%= number_input f, :vote_count %>
+  <%= error_tag f, :vote_count %>
+
+  <%= submit "Save", phx_disable_with: "Saving..." %>
+</form>

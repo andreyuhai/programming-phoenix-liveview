@@ -1,0 +1,32 @@
+<h1>Show Frequently asked question</h1>
+
+<%= if @live_action in [:edit] do %>
+  <%= live_modal @socket, PentoWeb.FrequentlyAskedQuestionLive.FormComponent,
+    id: @frequently_asked_question.id,
+    title: @page_title,
+    action: @live_action,
+    frequently_asked_question: @frequently_asked_question,
+    return_to: Routes.frequently_asked_question_show_path(@socket, :show, @frequently_asked_question) %>
+<% end %>
+
+<ul>
+
+  <li>
+    <strong>Question:</strong>
+    <%= @frequently_asked_question.question %>
+  </li>
+
+  <li>
+    <strong>Answer:</strong>
+    <%= @frequently_asked_question.answer %>
+  </li>
+
+  <li>
+    <strong>Vote count:</strong>
+    <%= @frequently_asked_question.vote_count %>
+  </li>
+
+</ul>
+
+<span><%= live_patch "Edit", to: Routes.frequently_asked_question_show_path(@socket, :edit, @frequently_asked_question), class: "button" %></span>
+<span><%= live_redirect "Back", to: Routes.frequently_asked_question_index_path(@socket, :index) %></span>
