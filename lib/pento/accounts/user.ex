@@ -2,6 +2,8 @@ defmodule Pento.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias Pento.FAQ.FrequentlyAskedQuestion
+
   @derive {Inspect, except: [:password]}
   schema "users" do
     field :username, :string
@@ -9,6 +11,8 @@ defmodule Pento.Accounts.User do
     field :password, :string, virtual: true
     field :hashed_password, :string
     field :confirmed_at, :naive_datetime
+
+    has_many :faqs, FrequentlyAskedQuestion
 
     timestamps()
   end
