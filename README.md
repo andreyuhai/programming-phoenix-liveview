@@ -19,6 +19,8 @@ Related commits:
 Related commits: 
 1. [Create a context function called markdown_product/2](https://github.com/andreyuhai/programming-phoenix-liveview/commit/fb3714675f023a98bcd2f3ff55a3f2631cc3c6aa)
 
+---
+
 # Other Chapters
 
 - [Chapter 1](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
