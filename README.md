@@ -17,6 +17,8 @@
 
 Solutions to all the exercises above are in [wrong_live.ex](/lib/pento_web/live/wrong_live.ex)
 
+---
+
 # Other Chapters
 
 - [Chapter 1 [Currently here]](https://github.com/andreyuhai/programming-phoenix-liveview/tree/chapter1)
